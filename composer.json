@@ -1,0 +1,61 @@
+{
+    "name": "jovian/venusian-fontconfig",
+    "description": "fontconfig font catalog driver for Venusian Topside: Typography's font matching and fallback answered by fontconfig through ext-fontconfig.",
+    "version": "0.11.0",
+    "type": "library",
+    "keywords": [
+        "framework",
+        "venusian",
+        "topside",
+        "typography",
+        "fontconfig"
+    ],
+    "license": "MIT",
+    "homepage": "https://venusian.projectsaturnstudios.com/ecosystem/jovian/venusian-fontconfig/0.11.x",
+    "support": {
+        "issues": "https://github.com/jovian-packages/venusian-fontconfig/issues",
+        "source": "https://github.com/jovian-packages/venusian-fontconfig"
+    },
+    "authors": [
+        {
+            "name": "Angel Gonzalez",
+            "email": "angel@projectsaturnstudios.com"
+        }
+    ],
+    "require": {
+        "php": "~8.4.27||^8.5.12",
+        "ext-fontconfig": "^0.11.1",
+        "venusian/topside": "^0.11.5"
+    },
+    "require-dev": {
+        "pestphp/pest": "^4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jovian\\Typography\\Fontconfig\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jovian\\Typography\\Fontconfig\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.11.x-dev"
+        },
+        "venusian": {
+            "providers": [
+                "Jovian\\Typography\\Fontconfig\\Providers\\VenusianFontconfigServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
