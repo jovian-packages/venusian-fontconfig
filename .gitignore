@@ -14,5 +14,3 @@
 .unlazy/locks/
 .unlazy-hook-state.json
 composer.lock
-/composer.dev.json
-/composer.dev.lock
